@@ -16,7 +16,6 @@ import (
 	"math"
 	"math/rand"
 	"os"
-	"fmt"
 )
 
 //!-main
@@ -49,7 +48,6 @@ func main() {
 	// the pseudo-random number generator using the current time.
 	// Thanks to Randall McPherson for pointing out the omission.
 	rand.Seed(time.Now().UTC().UnixNano())
-	fmt.Println(genereteColor())
 
 	if len(os.Args) > 1 && os.Args[1] == "web" {
 		//!+http
